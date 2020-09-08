@@ -1,0 +1,172 @@
+.body {
+  background-image: url(images/Background.png);
+  color: white;
+  font-family: Roboto;
+  background-size: 100%;
+  height: 1024px;
+}
+
+.menu {
+  display: flex;
+  flex-flow: column;
+}
+
+.title {
+  font-size: 55.5px;
+  padding-left: 94px;
+  margin-bottom: 0px;
+  padding-top: 79px;
+}
+
+.text {
+  font-size: 19px;
+  margin: 0px;
+  padding-top: 7px;
+  padding-left: 97px;
+}
+
+.difficults {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 49px;
+  line-height: 59px;
+  padding-top: 55px;
+  padding-left: 145px
+}
+
+.difficult__normal {
+  padding-top: 26px;
+}
+
+.difficult__hard {
+  padding-top: 22px;
+}
+
+.difficult:hover {
+  color: black;
+  opacity: 0.7;
+  transition: 0.5s;
+}
+
+.difficult__normal,
+.difficult__easy,
+.difficult__hard {
+  position: relative;
+}
+
+.difficult-check {
+  width: 18px;
+  height: 18px;
+  background-color: red;
+  transform: rotate(45deg);
+  position: absolute;
+  top: 45px;
+  left: -47px; 
+}
+
+.difficult:nth-child(1) .difficult-check{
+  top: 23px;
+}
+
+.cards {
+  display: flex;
+  padding-top: 21px;
+  margin-right: 58px;
+}
+
+.card-wrap:nth-child(1) {
+  transform: rotate(11.9deg);
+}
+
+.card-wrap:nth-child(2) {
+  transform: rotate(39.26deg) translate(-22px, 42px);
+}
+
+.bottom {
+  width: 97%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btn {
+  height: 95px;
+  width: 350px;
+  background: #D62B2E;
+  color: white;
+  font-size: 32px;
+  font-weight: bold;
+  border-radius: 10px;
+  margin-bottom: 44px;
+  margin-left: 95px;
+}
+
+button:focus {
+  outline: none;
+}
+
+.btn:hover {
+  box-shadow: 0 0 20px rgba(0,0,0,0.5);
+  transform: translateY(5px);
+}
+
+.table {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  height: inherit;
+  width: 100%;
+}
+
+.field {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 0;
+}
+
+.table-card__wrap {
+  width: 219px;
+  height: 343px;
+  padding-right: 20px;
+  padding-bottom: 15px;
+  display: none;
+  background-color: transparent;
+  position: relative; 
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  cursor: pointer;
+}
+
+.rotate {
+  transform: rotateY(180deg);
+  padding-left: 20px;
+  padding-right: 0;
+  }
+
+.card-back {
+  transform-style: preserve-3d;
+  transition: transform .8s;
+  height: 341px;
+  width: 218px;
+}
+
+.card-back:hover {
+  transform: translate3d(-10px, -30px, -40px) rotate(-3.08deg);
+  box-shadow: 10px 10px 15px rgba(0, 0, 0, .5);
+  transition: .8s;
+  }
+
+.card-back,
+.card-front {
+  position: absolute;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.card-front {
+  transform: rotateY(180deg);
+}
+
+

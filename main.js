@@ -15,7 +15,11 @@ let clean = function () {
       check.classList.remove("difficult-check");
     }
   }
-  
+};
+
+function randomInteger(min, max) {
+  let rand = min + Math.random() * (max + 1 - min);
+  return Math.floor(rand);
 };
 
 let chooseDifs = function (dif, romb) {
@@ -36,21 +40,17 @@ let chooseDifs = function (dif, romb) {
     play.innerHTML = "Начать игру";
     play.disabled = false;
   }
-}
+};
 
 for (let i = 0; i <= difs.length-1; i++){
   chooseDifs(difs[i],checks[i]);
-}
-
-function randomInteger(min, max) {
-  let rand = min + Math.random() * (max + 1 - min);
-  return Math.floor(rand);
 };
+
+
 
 play.onclick = function () {
   menu.style.display = "none";
   table.style.display = "flex";
-  console.log(field.style.width);
   switch (field.style.width){
     case "726px":
       for(let i=0; i<3; i++){
@@ -71,7 +71,7 @@ play.onclick = function () {
       fronts[randomInteger(0, 9)].src = "images/bug.png";
       break;
   };
-}
+};
 
 for(let card of cards){
     card.onclick = function () {
@@ -82,4 +82,4 @@ for(let card of cards){
       }
     }
   } 
-}
+};

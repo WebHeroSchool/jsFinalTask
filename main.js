@@ -72,7 +72,7 @@ play.onclick = function () {
       }
       fronts[randomInteger(0, 9)].src = "images/bug.png";
       break;
-  };
+  }
 };
 
 
@@ -85,7 +85,7 @@ let flip = function() {
         window.location.href=window.location.href;
       };
     }
-  } 
+  };
 };
 }
 

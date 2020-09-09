@@ -1,5 +1,5 @@
-let difs = document.querySelectorAll('.difficult');
-let checks = document.querySelectorAll('#rhombus');
+let difs = document.querySelectorAll(".difficult");
+let checks = document.querySelectorAll("#rhombus");
 let menu = document.querySelector(".menu");
 let play = document.querySelector(".btn");
 let table = document.querySelector(".table");
@@ -25,7 +25,7 @@ function randomInteger(min, max) {
 let chooseDifs = function (dif, romb) {
   dif.onclick = function () {
     clean();
-    romb.classList.add('difficult-check');
+    romb.classList.add('difficult-check");
     switch (true) { 
       case dif.innerHTML.indexOf("Простой") !== -1:
           field.style.width = "726px";
@@ -79,10 +79,10 @@ play.onclick = function () {
 let flip = function() {
   for(let card of cards){
     card.onclick = function () {
-    card.classList.add('rotate');
+    card.classList.add("rotate");
     for(let card of cards){
       card.onclick = function () {
-        window.location.href=window.location.href  
+        window.location.href=window.location.href;
       }
     }
   } 

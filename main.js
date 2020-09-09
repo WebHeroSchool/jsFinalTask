@@ -45,7 +45,7 @@ let chooseDifs = function (dif, romb) {
 let selectDfis = function() {
   for (let i = 0; i <= difs.length-1; i++){
     chooseDifs(difs[i],checks[i]);
-  };
+  }
 };
 
 selectDfis();
@@ -83,7 +83,7 @@ let flip = function() {
     for(let card of cards){
       card.onclick = function () {
         window.location.href=window.location.href;
-      }
+      };
     }
   } 
 };

@@ -87,6 +87,6 @@ let flip = function() {
     }
   };
 }
-}
+};
 
 flip();

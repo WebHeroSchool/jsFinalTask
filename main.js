@@ -36,7 +36,7 @@ let chooseDifs = function (dif, romb) {
       case dif.innerHTML.indexOf("Сложный") !== -1:
           field.style.width = "1220px";
           break;        
-    };
+    }
     play.innerHTML = "Начать игру";
     play.disabled = false;
   };
@@ -46,7 +46,7 @@ let selectDfis = function() {
   for (let i = 0; i <= difs.length-1; i++){
     chooseDifs(difs[i],checks[i]);
   };
-}
+};
 
 selectDfis();
 

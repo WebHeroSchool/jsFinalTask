@@ -25,7 +25,7 @@ function randomInteger(min, max) {
 let chooseDifs = function (dif, romb) {
   dif.onclick = function () {
     clean();
-    romb.classList.add('difficult-check");
+    romb.classList.add("difficult-check");
     switch (true) { 
       case dif.innerHTML.indexOf("Простой") !== -1:
           field.style.width = "726px";

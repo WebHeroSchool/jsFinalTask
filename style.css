@@ -6,6 +6,7 @@
   background-size: cover;
   background-attachment: scroll;
   min-width: 320px;
+  overflow: hidden;
 }
 
 .menu {

@@ -42,11 +42,13 @@ let chooseDifs = function (dif, romb) {
   }
 };
 
-for (let i = 0; i <= difs.length-1; i++){
-  chooseDifs(difs[i],checks[i]);
-};
+let selectDfis = function() {
+  for (let i = 0; i <= difs.length-1; i++){
+    chooseDifs(difs[i],checks[i]);
+  };
+}
 
-
+selectDfis();
 
 play.onclick = function () {
   menu.style.display = "none";
@@ -73,7 +75,9 @@ play.onclick = function () {
   };
 };
 
-for(let card of cards){
+
+let flip = function() {
+  for(let card of cards){
     card.onclick = function () {
     card.classList.add('rotate');
     for(let card of cards){
@@ -83,3 +87,6 @@ for(let card of cards){
     }
   } 
 };
+}
+
+flip();

@@ -20,7 +20,7 @@ let clean = function () {
 function randomInteger(min, max) {
   let rand = min + Math.random() * (max + 1 - min);
   return Math.floor(rand);
-};
+}
 
 let chooseDifs = function (dif, romb) {
   dif.onclick = function () {
@@ -39,7 +39,7 @@ let chooseDifs = function (dif, romb) {
     };
     play.innerHTML = "Начать игру";
     play.disabled = false;
-  }
+  };
 };
 
 let selectDfis = function() {

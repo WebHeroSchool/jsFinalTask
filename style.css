@@ -1,7 +1,7 @@
 .body {
   background-image: url(images/Background.png);
   color: white;
-  font-family: Roboto;
+  font-family: Roboto, sans-serif;
   width: 100%;
   background-size: cover;
   background-attachment: scroll;
@@ -177,13 +177,13 @@ button:focus {
   }
 
   .text {
-    font-size: 12px;     
+    font-size: 12px;    
   }
 
   .difficults {
     font-size: 32px;
     line-height: 34px;
-    padding-left: 119px;    
+    padding-left: 119px;
   }
 
   .card-wrap {
@@ -229,7 +229,7 @@ button:focus {
 @media (max-width: 675px) {
   .bottom {
     flex-flow: wrap;
-    margin-top: 53px;  
+    margin-top: 53px;
   }
 
   .cards {
@@ -252,8 +252,8 @@ button:focus {
 
   .btn {
     margin-left: 29px;
-  }    
-    
+  }
+
   .cards {
     margin-left: 36px;
   }

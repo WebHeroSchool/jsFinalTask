@@ -181,21 +181,21 @@ button:focus {
   }
 
   .difficults {
-     font-size: 32px;
-     line-height: 34px;
-     padding-left: 119px;    
+    font-size: 32px;
+    line-height: 34px;
+    padding-left: 119px;    
   }
 
   .card-wrap {
-     width: 38%;
+    width: 38%;
   }
    
   .start-card {
-     width: 100%; 
+    width: 100%; 
   }
 
   .difficult-check {
-     top: 36px;    
+    top: 36px;    
   }
 
   .difficult:nth-child(1) .difficult-check {

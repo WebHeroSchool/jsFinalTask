@@ -81,7 +81,7 @@
 }
 
 .card-wrap {
-    width: 100%;
+  width: 100%;
 }
 
 .start-card {
@@ -336,7 +336,6 @@ button:focus {
   }
 }
 
-
 @media (max-width: 569px) {
   .title {
     padding-left: 10px;
@@ -347,10 +346,6 @@ button:focus {
     padding-left: 15px;
     font-size: 10px;
   }
-}
-
-@media (max-width: 510px) {
-
 }
 
 @media (max-width: 476px) {

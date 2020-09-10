@@ -7,6 +7,8 @@
   background-attachment: scroll;
   min-width: 320px;
   overflow: hidden;
+  min-height: 1024px;
+  background-repeat: no-repeat;
 }
 
 .menu {
@@ -78,6 +80,10 @@
   position: absolute;
   right: 0;
   bottom: 0;
+}
+
+.card {
+  width: 100%;
 }
 
 .card-wrap {
@@ -165,7 +171,6 @@ button:focus {
   transform-style: preserve-3d;
   transition: transform .8s;
   height: 341px;
-  width: 218px;
 }
 
 .card-back,
@@ -173,6 +178,12 @@ button:focus {
   position: absolute;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
+  width: 85%;
+  top: 8%;
+}
+
+.card-loser {
+  width: 100%;
 }
 
 .card-back:hover {

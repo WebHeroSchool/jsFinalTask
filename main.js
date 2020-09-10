@@ -29,12 +29,15 @@ let chooseDifs = function (dif, romb) {
     switch (true) { 
       case dif.innerHTML.indexOf("Простой") !== -1:
           field.style.width = "726px";
+          field.style.height = "1024px";
           break;
       case dif.innerHTML.indexOf("Средний") !== -1:
           field.style.width = "727px";
+          field.style.height = "inherit";
           break;
       case dif.innerHTML.indexOf("Сложный") !== -1:
           field.style.width = "1220px";
+          field.style.height = "inherit";
           break;        
     }
     play.innerHTML = "Начать игру";

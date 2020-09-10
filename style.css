@@ -170,7 +170,7 @@ button:focus {
 .card-back {
   transform-style: preserve-3d;
   transition: transform .8s;
-  height: 341px;
+  height: 312px;
 }
 
 .card-back,

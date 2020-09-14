@@ -47,7 +47,7 @@ let chooseDifs = function (dif, romb) {
 
 let selectDfis = function() {
   for (let i = 0; i <= difs.length-1; i++){
-    chooseDifs(difs[i],checks[i]);
+    chooseDifs(difs[parseInt(i)],checks[parseInt(i)]);
   }
 };
 
@@ -59,7 +59,7 @@ play.onclick = function () {
   switch (field.style.width){
     case "726px":
       for(let i=0; i<3; i++){
-        cards[i].style.display = "flex";
+        cards[parseInt(i)].style.display = "flex";
       }
       fronts[randomInteger(0, 2)].src = "images/bug.png";
       break;

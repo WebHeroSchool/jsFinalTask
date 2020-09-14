@@ -11,7 +11,7 @@ play.disabled = true;
 
 let clean = function () {
   for(let check of checks){
-    if (check.classList.contains("difficult-check") === true){
+    if (check.classList.contains("difficult-check")){
       check.classList.remove("difficult-check");
     }
   }

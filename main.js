@@ -1,5 +1,5 @@
-let difs = document.querySelectorAll('.difficult');
-let checks = document.querySelectorAll('#rhombus');
+let difs = document.querySelectorAll(".difficult");
+let checks = document.querySelectorAll("#rhombus");
 let menu = document.querySelector(".menu");
 let play = document.querySelector(".btn");
 let table = document.querySelector(".table");
@@ -11,50 +11,55 @@ play.disabled = true;
 
 let clean = function () {
   for(let check of checks){
-    if (check.classList.contains("difficult-check") === true){
+    if (check.classList.contains("difficult-check")){
       check.classList.remove("difficult-check");
     }
   }
-  
 };
-
-let chooseDifs = function (dif, romb) {
-  dif.onclick = function () {
-    clean();
-    romb.classList.add('difficult-check');
-    switch (true) { 
-      case dif.innerHTML.indexOf("Простой") !== -1:
-          field.style.width = "726px";
-          break;
-      case dif.innerHTML.indexOf("Средний") !== -1:
-          field.style.width = "727px";
-          break;
-      case dif.innerHTML.indexOf("Сложный") !== -1:
-          field.style.width = "1220px";
-          break;        
-    };
-    play.innerHTML = "Начать игру";
-    play.disabled = false;
-  }
-}
-
-for (let i = 0; i <= difs.length-1; i++){
-  chooseDifs(difs[i],checks[i]);
-}
 
 function randomInteger(min, max) {
   let rand = min + Math.random() * (max + 1 - min);
   return Math.floor(rand);
+}
+
+let chooseDifs = function (dif, romb) {
+  dif.onclick = function () {
+    clean();
+    romb.classList.add("difficult-check");
+    switch (true) { 
+      case dif.innerHTML.indexOf("Простой") !== -1:
+          field.style.width = "726px";
+          field.style.height = "600px";
+          break;
+      case dif.innerHTML.indexOf("Средний") !== -1:
+          field.style.width = "727px";
+          field.style.height = "inherit";
+          break;
+      case dif.innerHTML.indexOf("Сложный") !== -1:
+          field.style.width = "1220px";
+          field.style.height = "inherit";
+          break;        
+    }
+    play.innerHTML = "Начать игру";
+    play.disabled = false;
+  };
 };
+
+let selectDfis = function() {
+  for (let i = 0; i <= difs.length-1; i++){
+    chooseDifs(difs[parseInt(i)],checks[parseInt(i)]);
+  }
+};
+
+selectDfis();
 
 play.onclick = function () {
   menu.style.display = "none";
   table.style.display = "flex";
-  console.log(field.style.width);
   switch (field.style.width){
     case "726px":
       for(let i=0; i<3; i++){
-        cards[i].style.display = "flex";
+        cards[parseInt(i)].style.display = "flex";
       }
       fronts[randomInteger(0, 2)].src = "images/bug.png";
       break;
@@ -70,16 +75,21 @@ play.onclick = function () {
       }
       fronts[randomInteger(0, 9)].src = "images/bug.png";
       break;
-  };
-}
+  }
+};
 
-for(let card of cards){
+
+let flip = function() {
+  for(let card of cards){
     card.onclick = function () {
-    card.classList.add('rotate');
+    card.classList.add("rotate");
     for(let card of cards){
       card.onclick = function () {
-        window.location.href=window.location.href  
-      }
+        window.location.href=window.location.href;
+      };
     }
-  } 
+  };
 }
+};
+
+flip();
